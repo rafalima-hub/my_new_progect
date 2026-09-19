@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends '_base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ sitename }}</title>
-</head>
+{% block content %}
 
-<body>
-
-    {# Esse é meu cabeçalho #}
-    <header><h1>{{ sitename }}</h1></header>
-
-    <nav>
-        <a href="{{ url_for('index') }}">Início</a> |
-        <a href="{{ url_for('about') }}">Sobre</a>
-    </nav>
+<section>
 
     <h2>Página inicial</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, veniam eius maxime iste ex quos beatae dolore
         dolores facilis iure error tenetur reiciendis facere possimus minima aperiam soluta! Quos, sit.</p>
 
-</body>
+</section>
 
-</html>
+{% endblock %}

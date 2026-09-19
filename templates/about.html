@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-bt">
+{% extends '_base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ sitename }}</title>
-</head>
+{% block content %}
 
-<body>
-
-    <nav>
-        <a href="{{ url_for('index') }}">Início</a> |
-        <a href="{{ url_for('about') }}">Sobre</a>
-    </nav>
-
-    <h2>Sobre...</h2>
+<article>
+    <h2 class="m-0 pb-4">Sobre...</h2>
 
     <h4>Sobre o site</h4>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quia atque facere adipisci suscipit maxime
@@ -29,6 +18,5 @@
         inventore earum repellat laboriosam, recusandae dignissimos vel explicabo quae ipsum quam ullam, provident
         dolorem sunt?</p>
 
-</body>
-
-</html>
+</article>
+{% endblock %}
